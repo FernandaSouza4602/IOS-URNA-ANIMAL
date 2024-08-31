@@ -1,6 +1,4 @@
-/* General styles for iPad 8th generation in landscape mode */
-@media only screen and (min-device-width: 810px) and (max-device-width: 834px) and (orientation: landscape) {
-    
+/* General styles for iPad 8th generation in landscape mode */   
     .container {
         display: flex;
         justify-content: flex-start;
@@ -67,4 +65,4 @@
         font-size: 1.4vw; 
         font-weight: bold;
     }
-}
+
