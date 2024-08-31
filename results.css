@@ -11,6 +11,7 @@
         margin: 0;
         box-sizing: border-box;
         position: relative;
+        overflow: hidden;
     }
 
     /* Title styling */
@@ -22,7 +23,7 @@
         text-align: center;
         width: 100%;
         position: relative;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
     }
 
     /* Content layout styling */
@@ -34,19 +35,20 @@
         padding-top: 20px;
         margin-bottom: 10px;
         position: relative;
+        overflow: hidden;
     }
 
     /* Candidate images container styling */
     .candidate-images { 
-        position: relative;
         width: 150px;
         display: flex;
         flex-direction: column;
         gap: 10px; 
         align-items: center;
         margin-right: 10px;
-        overflow: hidden;
-        padding-top: 20px;
+        overflow-y: auto;
+        padding: 20px 10;
+        height: calc(100% - 30px);
     }
 
     /* Individual candidate image styling */
@@ -60,7 +62,6 @@
     .chart-container { 
         width: calc(100% - 160px); 
         margin-left: 10px;
-        margin-bottom: 10px;
         overflow: hidden;
     }
 
