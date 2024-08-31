@@ -38,27 +38,40 @@
 
     /* Candidate images container styling */
     .candidate-images { 
+        position: relative;
+        width: 150px;
         display: flex;
         flex-direction: column;
         gap: 10px; 
         align-items: center;
         margin-right: 10px;
-        flex: 1;
         overflow: hidden;
-        max-height: calc(100vh - 44px - 20px - 4vh - 20px);
         padding-top: 20px;
     }
 
+    .candidate-images .image-wrapper {
+        position: absolute;
+        width: 100%;
+    }
+
     /* Individual candidate image styling */
-    .candidate-images img {
+    .candidate-images .image-wrapper img {
         width: 80px; 
         height: auto;
         border-radius: 10px;
     }
 
+    .candidate-images .image1 { top: 20px; }
+    .candidate-images .image2 { top: 120px; }
+    .candidate-images .image3 { top: 220px; }
+    .candidate-images .image4 { top: 320px; }
+    .candidate-images .image5 { top: 420px; }
+    .candidate-images .image6 { top: 520px; }
+    .candidate-images .image7 { top: 620px; }
+
     /* Chart container styling */
     .chart-container { 
-        width: calc(100% - 100px); 
+        width: calc(100% - 160px); 
         margin-left: 10px;
         margin-bottom: 10px;
         overflow: hidden;
