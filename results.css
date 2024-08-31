@@ -31,8 +31,9 @@
         justify-content: flex-start;
         width: 100%;
         flex-grow: 1;
-        margin-top: 2vh;
+        padding-top: 20px;
         margin-bottom: 10px;
+        position: relative;
     }
 
     /* Candidate images container styling */
@@ -44,7 +45,6 @@
         margin-right: 10px;
         flex: 1;
         overflow: hidden;
-        margin-top: 20px;
     }
 
     /* Individual candidate image styling */
