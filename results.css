@@ -21,7 +21,7 @@
         color: #333;
         text-align: center;
         width: 100%;
-        position: absolute;
+        position: relative;
         margin-bottom: 4vh;
     }
 
@@ -46,19 +46,19 @@
         flex: 1;
         overflow: hidden;
         max-height: calc(100vh - 44px - 20px - 4vh - 20px);
+        padding-top: 20px;
     }
 
     /* Individual candidate image styling */
     .candidate-images img {
-        width: 100%; 
-        max-width: 150px;
+        width: 80px; 
         height: auto;
         border-radius: 10px;
     }
 
     /* Chart container styling */
     .chart-container { 
-        width: calc(100% - 160px); 
+        width: calc(100% - 100px); 
         margin-left: 10px;
         margin-bottom: 10px;
         overflow: hidden;
