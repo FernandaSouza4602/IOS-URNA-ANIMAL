@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     'rgba(255, 99, 132, 1)'
                 ],
                 borderWidth: 1,
-                barThickness: 80,
-                maxBarThickness: 80,
-                barPercentage: 1.0,
-                categoryPercentage: 0.8
+                barThickness: 40,
+                maxBarThickness: 40,
+                barPercentage: 0.8,
+                categoryPercentage: 0.3
             }]
         },
         options: {
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         padding: 10 
                     },
                     grid: {
-                        drawBorder: false
+                        display: false
                     }
                 }
             }
