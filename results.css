@@ -22,7 +22,7 @@
         text-align: center;
         width: 100%;
         position: absolute;
-        margin-bottom: 2vh;
+        margin-bottom: 4vh;
     }
 
     /* Content layout styling */
@@ -31,7 +31,7 @@
         justify-content: flex-start;
         width: 100%;
         flex-grow: 1;
-        margin-top: 2vh;
+        margin-top: 4vh;
         margin-bottom: 10px;
     }
 
