@@ -53,7 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     'rgba(255, 159, 64, 1)',
                     'rgba(255, 99, 132, 1)'
                 ],
-                borderWidth: 2
+                borderWidth: 1,
+                barPercentage: 0.5,
+                categoryPercentage: 1.0
             }]
         },
         options: {
@@ -76,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     align: 'end',
                     anchor: 'end',
                     font: {
-                        size: 50,
+                        size: 40,
                         weight: 'bold'
                     },
                     formatter: function(value) {
@@ -105,7 +107,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         font: {
                             size: 18
                         },
-                        color: '#333'
+                        color: '#333'  
+                    },
+                    grid: {
+                        drawBorder: false
                     }
                 }
             }
