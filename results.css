@@ -45,6 +45,7 @@
         margin-right: 10px;
         flex: 1;
         overflow: hidden;
+        max-height: calc(100vh - 44px - 20px - 4vh - 20px);
     }
 
     /* Individual candidate image styling */
