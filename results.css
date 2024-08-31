@@ -1,20 +1,70 @@
-.candidate-images {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-right: 20px;
-}
+/* General styles for iPad 8th generation in landscape mode */
+@media only screen and (min-device-width: 810px) and (max-device-width: 834px) and (orientation: landscape) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 44px - 30px); 
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-.candidate-images img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-}
+    /* Title styling */
+    .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5vw; 
+        font-weight: bold;
+        margin-bottom: 4vh; 
+        margin-top: 2vh;
+        box-sizing: border-box;
+    }
 
-.chart-container {
-    margin-left: 30px;
-    width: calc(100% - 230px);
-    height: auto;
+    /* Content layout styling */
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    /* Candidate images container styling */
+    .candidate-images {
+        width: 200px; 
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        align-items: center;
+        margin-right: 20px; 
+    }
+
+    /* Individual candidate image styling */
+    .candidate-images img {
+        width: 100px; 
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Chart container styling */
+    .chart-container {
+        margin-left: 30px; 
+        width: calc(100% - 230px); 
+        height: auto;
+    }
+
+    /* Vote chart styling */
+    #voteChart {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Vote count text styling */
+    .vote-count {
+        position: absolute;
+        font-size: 1.4vw; 
+        font-weight: bold;
+    }
 }
