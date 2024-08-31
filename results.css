@@ -30,6 +30,7 @@
         display: flex;
         justify-content: flex-start;
         width: 100%;
+        flex-grow: 1;
     }
 
     /* Candidate images container styling */
