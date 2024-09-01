@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 barThickness: 40,
                 maxBarThickness: 40,
                 barPercentage: 0.8,
-                categoryPercentage: 0.3
+                categoryPercentage: 0.5
             }]
         },
         options: {
