@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }]
         },
         options: {
+            mantainAspectRatio: false,
             indexAxis: 'y',
             layout: {
                 padding: {
