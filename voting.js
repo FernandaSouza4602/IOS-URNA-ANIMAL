@@ -7,12 +7,12 @@ document.addEventListener('keydown', function(event) {
 
     // Identify if the user typed a number
     if (key >= '0' && key <= '9') {
-        numberInput.play();
-
         if (digit1.textContent === '') {
             digit1.textContent = key;
+            numberInput.play();
         } else if (digit2.textContent === '') {
             digit2.textContent = key;
+            numberInput.play();
 
             const candidateNumber = digit1.textContent + digit2.textContent;
             const candidate = candidates[candidateNumber];
@@ -63,7 +63,7 @@ document.addEventListener('keydown', function(event) {
             endPage.style.display = 'flex';
 
             // Play confirmation sound
-            const votingConfirmation = new Audio('.sounds/voting-confirmation.mp3');
+            const votingConfirmation = new Audio('./sounds/voting-confirmation.mp3');
             votingConfirmation.play();
 
             // Redirects the user to the home page after 3 seconds
