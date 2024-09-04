@@ -55,8 +55,21 @@ document.addEventListener('keydown', function(event) {
             // Save the updated votes back to localStorage
             localStorage.setItem('votes', JSON.stringify(votes));
 
-            // Redirects the user to the end page
-            window.location.href = 'end.html';
+            // Hide voting content
+            document.getElementById('votingContent').style.display = 'none';
+
+            // Show end page content
+            const endPage = document.getElementById('endPage');
+            endPage.style.display = 'flex';
+
+            // Play confirmation sound
+            const votingConfirmation = new Audio('.sounds/voting-confirmation.mp3');
+            votingConfirmation.play();
+
+            // Redirects the user to the home page after 3 seconds
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 3000); 
         }
     }
 });

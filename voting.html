@@ -70,6 +70,15 @@
                 color: #333;
                 display: none;
             }
+            .end-page {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 20vw;
+                font-weight: bold;
+                color: #333;
+            }
 
             /* Responsive adjustments */
             @media (max-width: 600px) {
@@ -88,26 +97,34 @@
                 .candidate-name {
                     font-size: 5vw;
                 }
+                .end-page {
+                    font-size: 4vw;
+                }
             }
         </style>
     </head>
 
     <body>
+        <div id="votingContent">
+            <div class="container">
+                <div class="presidente-label">PRESIDENTE</div>
+                <div class="input-container">
+                    <div class="input-box" id="digit1"></div>
+                    <div class="input-box" id="digit2"></div>
+                </div>
+            </div>
 
-        <div class="container">
-            <div class="presidente-label">PRESIDENTE</div>
-            <div class="input-container">
-                <div class="input-box" id="digit1"></div>
-                <div class="input-box" id="digit2"></div>
+            <div class="candidate-image-container">
+                <img src="" alt="Candidato" class="candidate-image" id="candidateImage">
+            </div>
+
+            <div class="candidate-name-container">
+                <div class="candidate-name" id="candidateName"></div>
             </div>
         </div>
 
-        <div class="candidate-image-container">
-            <img src="" alt="Candidato" class="candidate-image" id="candidateImage">
-        </div>
-
-        <div class="candidate-name-container">
-            <div class="candidate-name" id="candidateName"></div>
+        <div id="endPage" class="end-page">
+            FIM
         </div>
 
         <audio id="numberInput" src="./sounds/number-input.mp3"></audio>
